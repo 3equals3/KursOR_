@@ -276,7 +276,7 @@ System.register(["imgui-js", "./imgui_impl.js", "./imgui_demo.js", "./imgui_memo
 
         }
         return new ImGui.Vec4(menuRed, menuGreen, menuBlue, 1.0) //ImGui.COL32(clear_color.x* 0xff, clear_color.y* 0xff, clear_color.z* 0xff, 255)
-    }
+    }//lgbtq+
 
     function DrawGradientButton(text, size, t){
         let draw_list = ImGui.GetWindowDrawList();
