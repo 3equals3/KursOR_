@@ -552,6 +552,8 @@ System.register(["imgui-js", "./imgui_impl.js", "./imgui_demo.js", "./imgui_memo
                             DrawButtonHREF("Шифрование","https://docs.google.com/presentation/d/1z2ZYDpVzQn0jZfqZznnnC-UnNt07KjP0");
                             DrawButtonHREF("Экологическая задач","https://docs.google.com/presentation/d/16fR8neMUwvilAV9FYPehzKhXXHllRYfu");
                             DrawButtonHREF("Температурные режимы","https://docs.google.com/presentation/d/1-8gMTk-qHQUpjJL8CeKAVO3Dz_jIEPJy");
+                            DrawButtonHREF("Транспортная задача","https://eior.by/catalog_lecture/11-klass/informatika/19.php");
+                            DrawButtonHREF("Движение тела в воздухе","https://eior.by/catalog_lecture/11-klass/informatika/20.php");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         }
 
@@ -570,6 +572,7 @@ System.register(["imgui-js", "./imgui_impl.js", "./imgui_demo.js", "./imgui_memo
                             DrawButtonHREF("Моделирование динамики численности популяций","https://bit.ly/3NVfMK4");
                             DrawButtonHREF("Моделирование в задачах преследования","https://drive.google.com/file/d/1Epijn0_RtkHD3vR9J_YM6AO8xu2f_He3");
                             DrawButtonHREF("3D-моделирование интерьеров. Модель строительной оболочки","https://eior.by/catalog_lecture/11-klass/informatika/16.php");
+                            DrawButtonHREF("Моделирование в экономических задачах","https://eior.by/catalog_lecture/11-klass/informatika/18.php");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         }
                         DrawGradientButton("Тесты", new ImGui.Vec2(ImGui.GetWindowSize().x, 70), ()=>{
@@ -953,6 +956,8 @@ ImGui.GetIO().FontGlobalScale = 1;
                             DrawButtonHREF('Основы веб-конструирования',"https://eior.by/catalog_lecture/11-klass/informatika/5.php");
                             DrawButtonHREF('Создание веб-страниц',"https://eior.by/catalog_lecture/11-klass/informatika/6.php");
                             DrawButtonHREF('Рефлексия урока',"https://drive.google.com/file/d/1VHuRNjjrJQ0-FZwIOmmHJ46zNZz-FGIx");
+                            DrawButtonHREF('Понятие о каскадных таблицах стилей',"https://eior.by/catalog_lecture/11-klass/informatika/7.php");
+                            DrawButtonHREF('Визуальное веб-конструирование',"https://docs.google.com/forms/d/e/1FAIpQLSdOQsFwueu893eiDntPn3AHc6BVUOxiqAyLafo7-D28D2C8Ww/viewform?hr_submission=ChkI78m4ooMQEhAIvr_eu8cMEgcI05G8raQLEAA");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         };
 
@@ -965,7 +970,8 @@ ImGui.GetIO().FontGlobalScale = 1;
                             DrawButtonHREF('Основы веб-конструирования',"https://docs.google.com/forms/d/e/1FAIpQLSfRCyPfSKewAYtlG4DTo1FMfZbJ_uLrr7IA_i3OmDozTHSK6A/viewform");
                             DrawButtonHREF('Создание веб-страниц',"https://docs.google.com/forms/d/e/1FAIpQLSdxIBpix5-EDnMH9OfGyPwqJBZv0B73WGsa0ZLkre3yiPgJcw/viewform");
                             DrawButtonHREF('Вопросы по созданию веб-страниц',"https://drive.google.com/file/d/1lZvriE1KrmQeFLzNFWhNhbwPV8HtBKc_/view");
-                           
+                            DrawButtonHREF('Понятие о каскадных таблицах стилей',"https://docs.google.com/forms/d/e/1FAIpQLSe_VEuPDF51ajWxmLwGeGJhHvp8JvLSYf7Rd0mXosYqoR-VRA/viewform?hr_submission=ChkI78m4ooMQEhAIxZn3l8sMEgcI05G8raQLEAE");
+                            DrawButtonHREF('Визуальное веб-конструирование',"https://eior.by/catalog_lecture/11-klass/informatika/9.php");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         };
 
@@ -1099,6 +1105,7 @@ ImGui.GetIO().FontGlobalScale = 1;
                             DrawButtonHREF('Объектно-событийная модель работы программы. Визуальная среда разработки программ ',"https://eior.by/catalog_lecture/11-klass/informatika/1.php");
                             DrawButtonHREF('Проектирование интерфейса оконного приложения с использованием элементов управления ',"https://eior.by/catalog_lecture/11-klass/informatika/2.php");
                             DrawButtonHREF('Элементы управления для работы с графикой  ',"https://eior.by/catalog_lecture/11-klass/informatika/3.php");
+                            DrawButtonHREF('Создание приложений  ',"https://eior.by/catalog_lecture/11-klass/informatika/4.php");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         };
 
