@@ -958,6 +958,7 @@ ImGui.GetIO().FontGlobalScale = 1;
                             DrawButtonHREF('Рефлексия урока',"https://drive.google.com/file/d/1VHuRNjjrJQ0-FZwIOmmHJ46zNZz-FGIx");
                             DrawButtonHREF('Понятие о каскадных таблицах стилей',"https://eior.by/catalog_lecture/11-klass/informatika/7.php");
                             DrawButtonHREF('Визуальное веб-конструирование',"https://docs.google.com/forms/d/e/1FAIpQLSdOQsFwueu893eiDntPn3AHc6BVUOxiqAyLafo7-D28D2C8Ww/viewform?hr_submission=ChkI78m4ooMQEhAIvr_eu8cMEgcI05G8raQLEAA");
+                            DrawButtonHREF('Презентация по каскадным таблицам стилей',"https://drive.google.com/file/d/1sJPRTesd655-3L1tFxOAwPAjh9__wmgk/view");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         };
 
