@@ -973,6 +973,7 @@ ImGui.GetIO().FontGlobalScale = 1;
                             DrawButtonHREF('Вопросы по созданию веб-страниц',"https://drive.google.com/file/d/1lZvriE1KrmQeFLzNFWhNhbwPV8HtBKc_/view");
                             DrawButtonHREF('Понятие о каскадных таблицах стилей',"https://docs.google.com/forms/d/e/1FAIpQLSe_VEuPDF51ajWxmLwGeGJhHvp8JvLSYf7Rd0mXosYqoR-VRA/viewform?hr_submission=ChkI78m4ooMQEhAIxZn3l8sMEgcI05G8raQLEAE");
                             DrawButtonHREF('Визуальное веб-конструирование',"https://eior.by/catalog_lecture/11-klass/informatika/9.php");
+                            DrawButtonHREF('Мультимедиа на веб-страницах',"https://docs.google.com/forms/d/e/1FAIpQLSd_rCOkcA8b_STHTw7jF3g6qrT7l41lex2ypT3zjb7nWap4zw/viewform?hr_submission=ChkI78m4ooMQEhAI6KKjx-UMEgcI05G8raQLEAE");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         };
 
