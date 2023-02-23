@@ -23,7 +23,7 @@ System.register(["imgui-js", "./imgui_impl.js", "./imgui_demo.js", "./imgui_memo
 
     var cmodels = [false,false,false,false,false,false,false,false];
     var itinsoc = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
-    var webconstr = [false,false,false,false,false,false,false,false,false,false];
+    var webconstr = [false,false,false,false,false,false,false,false,false,false,false];
     var oop = [false,false,false,false,false,false,false,false,false,false];
 
     var images = new Object({
@@ -276,7 +276,7 @@ System.register(["imgui-js", "./imgui_impl.js", "./imgui_demo.js", "./imgui_memo
 
         }
         return new ImGui.Vec4(menuRed, menuGreen, menuBlue, 1.0) //ImGui.COL32(clear_color.x* 0xff, clear_color.y* 0xff, clear_color.z* 0xff, 255)
-    }//lgbtq+
+    }
 
     function DrawGradientButton(text, size, t){
         let draw_list = ImGui.GetWindowDrawList();
@@ -950,32 +950,49 @@ ImGui.BulletText("  Дальнейшее обслуживание.");
 ImGui.GetIO().FontGlobalScale = 1; 
                         };
 
-                        DrawGradientButton("Теория", new ImGui.Vec2(ImGui.GetWindowSize().x, 70), ()=>{
+                        DrawGradientButton("Примеры сайтов", new ImGui.Vec2(ImGui.GetWindowSize().x, 70), ()=>{
                             webconstr[7] = !webconstr[7];
                         });
-                        if(webconstr[7]){
+                        if(webconstr[7]){ 
+                            ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
+                            DrawButtonHREF('Пример веб-страницы 1',"https://evsukanna.wixsite.com/proojazz");
+                            DrawButtonHREF('Пример веб-страницы 2',"https://alexandrakib122.wixsite.com/fashion");
+                            DrawButtonHREF('Пример веб-страницы 3',"https://rommelervin797.wixsite.com/my-site-1");
+                            DrawButtonHREF('Пример веб-страницы 4',"https://nazarau0911.wixsite.com/website-2");
+                            DrawButtonHREF('Пример веб-страницы 5',"https://nastassya04.wixsite.com/my-site-1");
+                            DrawButtonHREF('Пример веб-страницы 6',"https://rusichka408.wixsite.com/sskz");
+                            DrawButtonHREF('Пример веб-страницы 7',"https://tiglow.wixsite.com/classicgames");
+                            ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
+                        }
+
+                        DrawGradientButton("Теория", new ImGui.Vec2(ImGui.GetWindowSize().x, 70), ()=>{
+                            webconstr[8] = !webconstr[8];
+                        });
+                        if(webconstr[8]){
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                             DrawButtonHREF('Основы веб-конструирования',"https://eior.by/catalog_lecture/11-klass/informatika/5.php");
                             DrawButtonHREF('Создание веб-страниц',"https://eior.by/catalog_lecture/11-klass/informatika/6.php");
                             DrawButtonHREF('Рефлексия урока',"https://drive.google.com/file/d/1VHuRNjjrJQ0-FZwIOmmHJ46zNZz-FGIx");
                             DrawButtonHREF('Понятие о каскадных таблицах стилей',"https://eior.by/catalog_lecture/11-klass/informatika/7.php");
-                            DrawButtonHREF('Визуальное веб-конструирование',"https://docs.google.com/forms/d/e/1FAIpQLSdOQsFwueu893eiDntPn3AHc6BVUOxiqAyLafo7-D28D2C8Ww/viewform?hr_submission=ChkI78m4ooMQEhAIvr_eu8cMEgcI05G8raQLEAA");
+                            DrawButtonHREF('Визуальное веб-конструирование',"https://eior.by/catalog_lecture/11-klass/informatika/9.php");
                             DrawButtonHREF('Презентация по каскадным таблицам стилей',"https://drive.google.com/file/d/1sJPRTesd655-3L1tFxOAwPAjh9__wmgk/view");
+                            DrawButtonHREF('Визуальное веб-конструирование',"https://eior.by/catalog_lecture/11-klass/informatika/9.php");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         };
 
                         DrawGradientButton("Тесты", new ImGui.Vec2(ImGui.GetWindowSize().x, 70), ()=>{
-                            webconstr[8] = !webconstr[8];
+                            webconstr[9] = !webconstr[9];
                         });
-                        if(webconstr[8]){
+                        if(webconstr[9]){
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                             DrawButtonHREF('Основные понятия',"https://docs.google.com/forms/d/e/1FAIpQLScePAZBecVAkamQxLG7TR19FlFgpW6gGXiDA7slii3rLtmw-A/viewform");
                             DrawButtonHREF('Основы веб-конструирования',"https://docs.google.com/forms/d/e/1FAIpQLSfRCyPfSKewAYtlG4DTo1FMfZbJ_uLrr7IA_i3OmDozTHSK6A/viewform");
                             DrawButtonHREF('Создание веб-страниц',"https://docs.google.com/forms/d/e/1FAIpQLSdxIBpix5-EDnMH9OfGyPwqJBZv0B73WGsa0ZLkre3yiPgJcw/viewform");
                             DrawButtonHREF('Вопросы по созданию веб-страниц',"https://drive.google.com/file/d/1lZvriE1KrmQeFLzNFWhNhbwPV8HtBKc_/view");
                             DrawButtonHREF('Понятие о каскадных таблицах стилей',"https://docs.google.com/forms/d/e/1FAIpQLSe_VEuPDF51ajWxmLwGeGJhHvp8JvLSYf7Rd0mXosYqoR-VRA/viewform?hr_submission=ChkI78m4ooMQEhAIxZn3l8sMEgcI05G8raQLEAE");
-                            DrawButtonHREF('Визуальное веб-конструирование',"https://eior.by/catalog_lecture/11-klass/informatika/9.php");
+                            DrawButtonHREF('Визуальное веб-конструирование',"https://docs.google.com/forms/d/e/1FAIpQLSdOQsFwueu893eiDntPn3AHc6BVUOxiqAyLafo7-D28D2C8Ww/viewform?hr_submission=ChkI78m4ooMQEhAIvr_eu8cMEgcI05G8raQLEAA");
                             DrawButtonHREF('Мультимедиа на веб-страницах',"https://docs.google.com/forms/d/e/1FAIpQLSd_rCOkcA8b_STHTw7jF3g6qrT7l41lex2ypT3zjb7nWap4zw/viewform?hr_submission=ChkI78m4ooMQEhAI6KKjx-UMEgcI05G8raQLEAE");
+                            DrawButtonHREF('Визуальное веб-конструирование',"https://docs.google.com/forms/d/e/1FAIpQLSdOQsFwueu893eiDntPn3AHc6BVUOxiqAyLafo7-D28D2C8Ww/viewform?hr_submission=ChkI78m4ooMQEhAIvr_eu8cMEgcI05G8raQLEAA");
                             ImGui.InvisibleButton("#invb", new ImGui.Vec2(100,15))
                         };
 
@@ -1151,7 +1168,6 @@ ImGui.GetIO().FontGlobalScale = 1;
                         ImGui.PushStyleColor(ImGui.Col.Text, ImGui.COL32(0, 0, 0, 255));
                         ImGui.BeginChild("Child", new ImGui.Vec2(ImGui.GetWindowSize().x * 4/5 - ImGui.GetWindowSize().x/5, ImGui.GetWindowSize().y - 50 - ImGui.CalcTextSize("AWG").y), false, window_flags);
                         
-
                         ImGui.SetCursorPosX((ImGui.GetWindowSize().x - ImGui.CalcTextSize("Карневич Лариса Геннадьевна").x)*0.5);
                         ImGui.Text("Карневич Лариса Геннадьевна");
 
@@ -1167,9 +1183,7 @@ ImGui.GetIO().FontGlobalScale = 1;
                         DrawGradientButton("Обратная связь (необходим гугл аккаунт). Код курса - i4srvab", new ImGui.Vec2(ImGui.GetWindowSize().x, 70), ()=>{
                             document.location.href = "https://classroom.google.com/u/0/r/Mzg3NzE2MTU1NjAz/sort-last-name";
                         });
-                        if(oop[7]){
-                            
-                        };
+
 
                         DrawGradientButton("Назад", new ImGui.Vec2(ImGui.GetWindowSize().x, 70), ()=>{
                             menustate = 0;
